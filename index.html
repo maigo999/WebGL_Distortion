@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="my-div"></div>
+
+  <!-- library needed -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="js/hover.min.js"></script>
+  <script>
+      var myAnimation = new hoverEffect({
+          parent: document.querySelector('.my-div'),
+          intensity: 0.3,
+          image1: 'images/myImage1.jpg',
+          image2: 'images/myImage2.jpg',
+          displacementImage: 'images/myDistorsionImage.png'
+      });
+  </script>
+</body>
+</html>
