@@ -11,10 +11,11 @@
 
 <style>
 .my-div{
-  width: 1000px;
-  height: 500px;
+  width: 90vw;
+  height: 80vh;
+  margin: auto;
+  transition: all 1.5s ease;
 }
-
 </style>
   <!-- library needed -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
@@ -23,10 +24,12 @@
   <script>
     var myAnimation = new hoverEffect({
         parent: document.querySelector('.my-div'),
-        intensity: 0.3,
-        image1: 'img/KM19814236_TP_V.jpg',
-        image2: 'img/RED19526C009_TP_V.jpg',
-        displacementImage: 'img/DisplacementMap3.png'
+        intensity: 1,
+        angle2: Math.PI / 2,
+        video: true,
+        image1: 'video/video.mp4',
+        image2: 'video/video2.mp4',
+        displacementImage: 'img/DisplacementMap_dev.png'
     });
 
 
